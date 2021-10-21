@@ -10,6 +10,16 @@ $('.center_slide').slick({
    });
 
    $(document).ready(function(){
+
+    $("#top").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+    $('.back-top').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    })
+
     $('#community_content').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -104,6 +114,18 @@ $(".price-range h3 i").click(function(){
 $('.head-2 button').click(function(){
     $('.head-sort').fadeToggle('head-sort-active')
 })
+window.FontAwesomeConfig = {
+  searchPseudoElements: true
+}
 
 
    });
+
+   $(document).ready(function () {
+    $(".video_item").click(function(){
+        var html = $(this).children('input').val()
+        console.log(html)
+        $(".center_slide").html(html)
+    })
+});
+

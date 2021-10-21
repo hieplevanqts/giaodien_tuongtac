@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sasstocss": "node-sass sass/main.scss css/style.css -w"
+    "sasstocss": "node-sass sass/main.scss css/style.css -w",
+	"sasstocss": "node-sass sass/main_mobile.scss css/style_mobile.css -w"
   },
   "author": "Le Van Hiep",
   "license": "ISC",
